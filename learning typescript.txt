@@ -1,1 +1,43 @@
-learning typescript
+# Learning TypeScript - Day 1
+
+By the end of this lesson, I will know how to use Swagger, TypeScript, and systems/code architecture.
+
+## Starting any TypeScript Node.js project
+
+1. Create the folder and open it in VS Code
+2. Init git and npm:
+   git init
+   npm init -y
+3. Create .gitignore with these lines:
+   node_modules
+   dist
+   .env
+4. Install TypeScript and tooling:
+   npm install -D typescript @types/node tsx
+   (tsx replaces ts-node. It runs TS directly and doesn't break when TypeScript upgrades)
+5. Generate tsconfig.json:
+   npx tsc --init
+6. Edit tsconfig.json. Make sure these are set:
+   "rootDir": "./src",
+   "outDir": "./dist",
+   "module": "commonjs",
+   "target": "ES2020",
+   "strict": true,
+   "esModuleInterop": true,
+   "skipLibCheck": true
+7. Create src/index.ts
+8. Add scripts to package.json:
+   "dev": "tsx watch src/index.ts",
+   "build": "tsc",
+   "start": "node dist/index.js"
+9. Run it:
+   npm run dev       (development, auto-restarts on save)
+   npm run build     (compiles to dist/)
+   npm start         (runs the compiled build)
+
+10. install express with the command npm install --save-dev  @types/express 
+
+## Notes
+- "module" in tsconfig must match "type" in package.json. "type": "commonjs" means "module": "commonjs".
+- Installing a library that has no built-in types (e.g. express): also install its types with `npm i -D @types/express`.
+- Commit early: git add . && git commit -m "init project"
