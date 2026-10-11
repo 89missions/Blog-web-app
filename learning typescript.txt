@@ -1,43 +1,20 @@
-# Learning TypeScript - Day 1
+learning typescript
 
-By the end of this lesson, I will know how to use Swagger, TypeScript, and systems/code architecture.
+Subject: Application for Web Developer Role / National Service Placement
 
-## Starting any TypeScript Node.js project
+Dear Hiring Manager,
 
-1. Create the folder and open it in VS Code
-2. Init git and npm:
-   git init
-   npm init -y
-3. Create .gitignore with these lines:
-   node_modules
-   dist
-   .env
-4. Install TypeScript and tooling:
-   npm install -D typescript @types/node tsx
-   (tsx replaces ts-node. It runs TS directly and doesn't break when TypeScript upgrades)
-5. Generate tsconfig.json:
-   npx tsc --init
-6. Edit tsconfig.json. Make sure these are set:
-   "rootDir": "./src",
-   "outDir": "./dist",
-   "module": "commonjs",
-   "target": "ES2020",
-   "strict": true,
-   "esModuleInterop": true,
-   "skipLibCheck": true
-7. Create src/index.ts
-8. Add scripts to package.json:
-   "dev": "tsx watch src/index.ts",
-   "build": "tsc",
-   "start": "node dist/index.js"
-9. Run it:
-   npm run dev       (development, auto-restarts on save)
-   npm run build     (compiles to dist/)
-   npm start         (runs the compiled build)
+I am writing to express my interest in the Web Developer opportunity at your company.
 
-10. install express with the command npm install --save-dev  @types/express 
+I have completed my Computer Science studies at Ghana Communication Technology University and am currently awaiting my National Service posting. My technical experience includes building backend applications using Node.js, Express.js, TypeScript, MongoDB, and PostgreSQL.
 
-## Notes
-- "module" in tsconfig must match "type" in package.json. "type": "commonjs" means "module": "commonjs".
-- Installing a library that has no built-in types (e.g. express): also install its types with `npm i -D @types/express`.
-- Commit early: git add . && git commit -m "init project"
+Through my projects, I have gained practical experience in REST API development, authentication and authorization, database management, and backend application architecture.
+
+I would welcome the opportunity to contribute to your development team and further strengthen my skills in a professional environment. I would also be interested in undertaking my National Service with your company, should a suitable placement be available.
+
+Please find my CV attached for your consideration. Thank you for your time, and I look forward to hearing from you.
+
+Kind regards,
+Samuel Asamoah
+0507145629
+github.com/89missions
