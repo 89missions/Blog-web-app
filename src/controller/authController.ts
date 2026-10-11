@@ -71,6 +71,7 @@ export const loginUser = async(req:Request,res:Response)=>{
     
     }
     catch(error){
-
+        return res.status(500).json({message:"Internal Server Error"})
     }
 }
+export default {registerUser,loginUser}
